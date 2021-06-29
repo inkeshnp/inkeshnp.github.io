@@ -69,45 +69,5 @@
         }
     });
     
-    
-    // Blogs carousel
-    $(".blog-carousel").owlCarousel({
-        autoplay: true,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-        ],
-        responsive: {
-            0:{
-                items:1
-            },
-            576:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            992:{
-                items:3
-            }
-        }
-    });
-    
-    
-    // Portfolio filter
-    var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-    });
-
-    $('#portfolio-filter li').on('click', function () {
-        $("#portfolio-filter li").removeClass('filter-active');
-        $(this).addClass('filter-active');
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
-    });
-    
 })(jQuery);
 
