@@ -1231,10 +1231,11 @@ a:focus {
 .tentang .tentang-text h2 {
     font-size: 18px;
     font-weight: 600;
+    min-height: 43.2px;
 }
 
 .tentang .tentang-text p {
-    margin: 0;
+    margin: 0 auto;
 }
 
 
