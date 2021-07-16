@@ -4,14 +4,14 @@
 body {
     color: #797979;
     background: #F0F4F5;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1,
-h2, 
-h3, 
+h2,
+h3,
 h4,
-h5, 
+h5,
 h6 {
     color: #343148;
 }
@@ -58,7 +58,7 @@ a:focus {
 }
 
 .back-to-top:hover i {
-    color: #F7CAC9;
+    color: #89dee2;
 }
 
 .back-to-top i {
@@ -141,12 +141,12 @@ a:focus {
         background: rgba(0, 0, 0, .1) !important;
         z-index: 9;
     }
-    
+
     .navbar.nav-sticky {
         padding: 10px 60px;
         background: #343148 !important;
     }
-    
+
     .navbar a.nav-link {
         padding: 8px 15px;
         font-size: 14px;
@@ -155,20 +155,20 @@ a:focus {
     }
 }
 
-@media (max-width: 991.98px) {   
+@media (max-width: 991.98px) {
     .navbar {
         padding: 15px;
         background: #343148 !important;
     }
-    
+
     .navbar .navbar-brand span {
         color: #ffffff;
     }
-    
+
     .navbar a.nav-link {
         padding: 5px;
     }
-    
+
     .navbar .dropdown-menu {
         box-shadow: none;
     }
@@ -250,15 +250,15 @@ a:focus {
     .hero .hero-text {
         padding: 0 15px;
     }
-    
+
     .hero .hero-text h1 {
         font-size: 35px;
     }
-    
+
     .hero .hero-text p {
         font-size: 16px;
     }
-    
+
     .hero .hero-text .btn {
         padding: 12px 30px;
         letter-spacing: 1px;
@@ -270,11 +270,11 @@ a:focus {
         font-size: 30px;
         font-weight: 600;
     }
-    
+
     .hero .hero-text p {
         font-size: 14px;
     }
-    
+
     .hero .hero-text .btn {
         padding: 10px 15px;
         font-weight: 400;
@@ -287,11 +287,11 @@ a:focus {
         font-size: 25px;
         font-weight: 600;
     }
-    
+
     .hero .hero-text p {
         font-size: 14px;
     }
-    
+
     .hero .hero-text .btn {
         padding: 8px 10px;
         font-size: 12px;
@@ -349,7 +349,7 @@ a:focus {
     .page-header h2 {
         font-size: 35px;
     }
-    
+
     .page-header a {
         font-size: 18px;
     }
@@ -597,6 +597,13 @@ a:focus {
     text-align: justify;
 }
 
+.gejala .gejala-text ul li{
+    font-weight: bold;
+    color: #2e4450;
+    font-weight: 500;
+    list-style-type: decimal;
+}
+
 @media (max-width: 767.98px) {
     .gejala .gejala-img {
         margin-bottom: 30px;
@@ -723,99 +730,64 @@ a:focus {
 
 
 /*******************************/
-/******* Grade CSS *******/
+/******** Portfolio CSS ********/
 /*******************************/
-
-.grade {
+.portfolio {
     position: relative;
-    padding: 45px 0;
+    padding: 45px 0 15px 0;
 }
 
-.grade .container {
+.portfolio #portfolio-filter {
     padding: 0;
-}
-
-.grade .grade-item {
-    position: relative;
-    margin: 0 15px;
+    margin: -15px 0 25px 0;
+    list-style: none;
+    font-size: 0;
     text-align: center;
 }
 
-.grade .grade-img {
-    position: relative;
-    margin-bottom: 15px;
-    z-index: 1;
-}
-
-.grade .grade-item img {
-    margin: 0 auto;
-    width: 120px;
-    padding: 13px;
-    border-radius: 100px;
-    border: 1px solid rgba(0, 0, 0, .07);
-    background: #ffffff;
-    transition: .5s;
-}
-
-.grade .grade-text {
-    position: relative;
-    margin-top: -70px;
-    padding: 75px 25px 25px 25px;
-    text-align: center;
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, .07);
-}
-
-.grade .grade-item p {
-    font-size: 16px;
-    color: #666666;
-}
-
-.grade .grade-text h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.grade .grade-text h4 {
-    color: #666666;
+.portfolio #portfolio-filter li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    padding: 6px 12px;
+    color: #343148;
     font-size: 14px;
-    margin-bottom: 0;
+    font-weight: 400;
+    border-radius: 0;
+    background: none;
+    border: 1px solid #343148;
+    transition: .3s;
 }
 
-.grade .owl-item.center img {
-    border-color: transparent;
-}
-
-.grade .owl-item.center .grade-text {
+.portfolio #portfolio-filter li:hover,
+.portfolio #portfolio-filter li.filter-active {
     background: #343148;
-}
-
-.grade .owl-item.center .grade-text h3 {
     color: #89dee2;
 }
 
-.grade .owl-item.center .grade-text p,
-.grade .owl-item.center .grade-text h4 {
-    color: #ffffff;
+.portfolio .portfolio-item {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: .3s;
 }
 
-.grade .owl-dots {
-    margin-top: 15px;
-    text-align: center;
+.portfolio .portfolio-wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
-.grade .owl-dot {
-    display: inline-block;
-    margin: 0 5px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #89dee2;
+.portfolio img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
 }
 
-.grade .owl-dot.active {
-    background: #343148;
+.portfolio .portfolio-wrap:hover img {
+    transform: rotate(5deg) scale(1.12);
 }
 
 
@@ -873,8 +845,8 @@ a:focus {
 
 .pencegahan .pencegahan-img img {
     position: relative;
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -980,7 +952,7 @@ a:focus {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .quote .container {
@@ -1077,14 +1049,13 @@ a:focus {
     padding: 45px 0 15px 0;
 }
 
-.tentang .kecil {
-    padding: auto;
-    float: none;
+.tentang .intro {
+    padding-bottom: 25px;
 }
 
 .tentang .intro p {
     color: #454545;
-    text-align: justify;
+    text-align: center;
     margin: 0 auto;
     padding: 25px 25px;
     width: 60%;
@@ -1173,7 +1144,59 @@ a:focus {
 }
 
 .tentang .tentang-text p {
+    margin: 0;
+}
+
+@media (max-width: 767.98px) {
+    .tentang .intro p {
+        text-align: justify;
+    }
+}
+
+/*******************************/
+/********* Source CSS *********/
+/*******************************/
+.source {
     margin: 0 auto;
+    width: fit-content;
+    padding: 45px 0 15px 0;
+}
+
+.source .container {
+    padding-bottom: 25px;
+}
+
+.source .judul {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.source .dafpus {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0.2;
+    padding: 50px 35px;
+    background-color: #ffffff;
+    font-size: 16px;
+    text-align: justify;
+    font-weight: 450;
+    letter-spacing: 0.5px;
+    color: black;
+}
+
+.source .dafpus ul {
+    padding: auto;
+}
+
+.source .dafpus li {
+    list-style-type: decimal;
+}
+
+.source .dafpus li a {
+    color: black;
+}
+
+.source .dafpus li a:hover {
+    color: #89dee2;
 }
 
 
@@ -1191,7 +1214,7 @@ a:focus {
     background: linear-gradient(rgba(52, 49, 72, .9), rgba(52, 49, 72, .9)), url(../img/footer-bg-hnp.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .footer .footer-info {
@@ -1321,6 +1344,7 @@ a:focus {
 }
 
 @media (max-width: 767.98px) {
+
     .footer .copyright p,
     .footer .copyright .col-md-6:last-child p {
         margin: 5px 0;
